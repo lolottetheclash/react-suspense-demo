@@ -66,7 +66,7 @@ const fetchUser = () => {
 const fetchPosts = () => {
   console.log('Fetching posts...');
   return axios
-    .get('https://jsonplaceholder.typicode.com/posts?_limit=5')
+    .get('https://jsonplaceholder.typicode.com/posts?_limit=150')
     .then(res => res.data)
     .catch(e => console.log(e));
 };
